@@ -1,5 +1,3 @@
-# Valentine-Rose-Visualization
-
 # 🌹 Valentine's Love Rose - A Mathematical Visualization🌹
 
 ## 📌 Project Overview
