@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Love Rose</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            animation: backgroundAnimation 3s infinite alternate;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcccc; }
+            100% { background-color: #ff6666; }
+        }
+        h1 {
+            animation: pulsate 2s infinite;
+            font-size: 40px;
+            color: #b30000;
+            margin-top: 20px;
+        }
+        @keyframes pulsate {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .romantic-text {
+            font-size: 24px;
+            color: #800000;
+            font-style: italic;
+            margin-bottom: 20px;
+            max-width: 80%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 90%;
+            padding: 20px;
+        }
+        .graph-container {
+            flex: 1;
+            min-width: 45%;
+            max-width: 50%;
+            height: 450px;
+            background: rgba(255, 204, 204, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .equation-container {
+            flex: 1;
+            min-width: 40%;
+            max-width: 45%;
+            background: rgba(255, 235, 235, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            word-wrap: break-word;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            animation: fadeIn 3s infinite alternate;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Valentine's Love Rose</h1>
+    <div class="romantic-text"> 
+        {{ romantic_text | safe }}
+    </div>
+    
+    <div class="container">
+        <div class="graph-container">
+            <div id="graph-container">{{ graph_html | safe }}</div>
+        </div>
+        <div class="equation-container">
+            <h3>Rose Equation:</h3>
+            <div class="math-equation">
+                {{ rose_equation | safe }}
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">Developed by Nitin Mane <br> 2025</div>
+</body>
+</html>
