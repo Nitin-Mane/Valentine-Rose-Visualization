@@ -1,6 +1,6 @@
 # Valentine-Rose-Visualization
 
-# 🌹 Valentine's Love Rose - A Mathematical Visualization 🌹
+#🌹 Valentine's Love Rose - A Mathematical Visualization🌹
 
 ## 📌 Project Overview
 This project is a **beautiful Valentine's Day web app** that visualizes a **3D mathematical rose animation** using **Plotly**. It also displays the **rose equation** alongside the graph, making it a perfect blend of **mathematics and romance**. 💖✨
@@ -70,6 +70,6 @@ python main.py
 
 ## 📷 Screenshot Preview
 
-![Screenshot of Valentine's Love Rose](images/screenshot.png)
+![Screenshot of Valentine's Love Rose](images/Screenshot.png)
 
 
