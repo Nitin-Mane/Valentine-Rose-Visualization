@@ -29,7 +29,7 @@ This project is a **beautiful Valentine's Day web app** that visualizes a **3D m
 
 ### 📥 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Valentine-Rose-Visualization.git
+git clone https://github.com/Nitin-Mane/Valentine-Rose-Visualization.git
 cd Valentine-Rose-Visualization
 ```
 
@@ -57,11 +57,15 @@ python main.py
 📷 Screenshot Preview
 
 ## 📜 Mathematical Rose Equation
+
 The 3D rose structure is mathematically represented as:
 
-```latex
-x = 1 - \frac{1}{2} \left( \frac{5}{4} \left( 1 - \frac{\mod(3.6\theta, 2\pi)}{\pi} \right)^2 - \frac{1}{4} \right)^2
-y = A R^2 (B R - 1)^2 \sin(\phi)
-X = R_2 \sin(\theta), \quad Y = R_2 \cos(\theta), \quad Z = x (R \cos(\phi) - y \sin(\phi))
+**Equation for x:**
+$$x = 1 - \frac{1}{2} \left( \frac{5}{4} \left( 1 - \frac{\mod(3.6\theta, 2\pi)}{\pi} \right)^2 - \frac{1}{4} \right)^2$$
 
-```
+**Equation for y:**
+$$y = A R^2 (B R - 1)^2 \sin(\phi)$$
+
+**Equations for X, Y, and Z:**
+$$X = R_2 \sin(\theta), \quad Y = R_2 \cos(\theta), \quad Z = x (R \cos(\phi) - y \sin(\phi))$$
+
